@@ -7,4 +7,7 @@ if [ -d "$TEMP_DIR" ]; then
     rm -rf $TEMP_DIR
     echo "Bootstrap finished, launching server..."
 fi
+
+printenv
+cd $WORK_DIR/linux/
 $WORK_DIR/linux/starbound_server
